@@ -1,10 +1,48 @@
-import logo from './logo.svg';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
+import Blog from './Components/Blog/Blog';
+import ErrorPage from './Components/ErrorPage/ErrorPage';
+import Home from './Components/Home/Home';
+import Root from './Components/Root/Root';
+import Statistics from './Components/Statistics/Statistics';
+import Topics from './Components/Topics/Topics';
 
 function App() {
+  const router = createBrowserRouter([
+    {
+      path:'/',
+      element:<Root></Root>,
+      errorElement:<ErrorPage></ErrorPage>,
+      children:[
+        {
+          path:'/',
+          element:<Home></Home>
+        },
+        {
+          path:'/home',
+          element:<Home></Home>
+        },
+        {
+          path:'/topic',
+          element:<Topics></Topics>,
+        },
+        {
+          path:'/statistics',
+          element:<Statistics></Statistics>
+        },
+        {
+          path:'/blog',
+          element:<Blog></Blog>
+        }
+      ]
+    }
+  ]);
+
   return (
     <div className="App">
-        <h1 className='text-6xl decoration-slate-50'>hello world</h1>
+      
+         <RouterProvider router={router}></RouterProvider>
+      
     </div>
   );
 }

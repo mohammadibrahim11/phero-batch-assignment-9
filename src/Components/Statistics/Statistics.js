@@ -1,22 +1,38 @@
-import React from 'react';
-import './Statistics.css'
+import React, { useContext } from "react";
+import {
+  BarChart,
+  CartesianGrid,
+  XAxis,
+  YAxis,
+  Tooltip,
+  Legend,
+  Bar,
+} from "recharts";
+import { TopicsContext } from "../Root/Root";
+import "./Statistics.css";
 
 const Statistics = () => {
-    return (
-        <div>
-          import { LineChart, Line, CartesianGrid, XAxis, YAxis } from 'recharts';
-const data = [{name: 'Page A', uv: 400, pv: 2400, amt: 2400}, ...];
+  const statistics = useContext(TopicsContext);
+  console.log(statistics);
+  const { data } = statistics;
 
-const renderLineChart = (
-  <LineChart width={600} height={300} data={data}>
-    <Line type="monotone" dataKey="uv" stroke="#8884d8" />
-    <CartesianGrid stroke="#ccc" />
-    <XAxis dataKey="name" />
-    <YAxis />
-  </LineChart>
-);
-        </div>
-    );
+  return (
+   
+            <div className=" mt-6 mb-6">
+      <BarChart className="w-full mx-auto" width={750} height={250} data={data}>
+        <CartesianGrid strokeDasharray="3 3" />
+        <XAxis  dataKey="name" />
+        <YAxis dataKey="total" />
+        <Tooltip />
+        <Legend />
+        <Bar dataKey="total" fill="#8884d8" />
+        <Bar dataKey="" fill="#8884d8" />
+      </BarChart>
+    </div>
+   
+ 
+    //
+  );
 };
 
 export default Statistics;

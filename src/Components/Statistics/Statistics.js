@@ -18,8 +18,8 @@ const Statistics = () => {
 
   return (
    
-            <div className=" mt-6 mb-6">
-      <BarChart className="w-full mx-auto" width={750} height={250} data={data}>
+            <div className=" mt-3  mb-32">
+      <BarChart className="w-full mx-auto pt-12" width={750} height={250} data={data}>
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis  dataKey="name" />
         <YAxis dataKey="total" />

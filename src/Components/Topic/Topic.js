@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Topic = ({ topic }) => {
   console.log(topic);
-  const { logo, name,id} = topic;
+  const { logo, name,id,total} = topic;
   return (
     <div className="card shadow-xl ">
       <figure className="px-10 pt-10">
@@ -14,9 +14,10 @@ const Topic = ({ topic }) => {
       
         <div className="card-actions">
          <div className="flex justify-between">
+        
          <h2 className="card-title text-base  text-purple-400">{name}</h2>
          <Link to={`/startquiz/${id}`}>
-         <button className=" btn text-xs ml-8 ">start practice <ArrowRightIcon className="h-5 w-5 ml-1 text-white"/>   </button>
+         <button className=" btn text-xs ml-5 ">start practice <ArrowRightIcon className="h-5 w-5 ml-1 text-white"/>   </button>
          </Link>
          </div>
         </div>

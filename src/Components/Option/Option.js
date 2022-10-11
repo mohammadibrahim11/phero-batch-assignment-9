@@ -1,4 +1,6 @@
 import React from "react";
+import Swal from 'sweetalert2'
+
 
 const Option = ({ option,correctAnswer }) => {
     console.log(correctAnswer);
@@ -7,9 +9,18 @@ const Option = ({ option,correctAnswer }) => {
     const handleClick = () => {
         console.log(correctAnswer);
         if (option === correctAnswer) {
-          alert("click");
+            Swal.fire(
+              'Good job!',
+              'Your answer is correct',
+              'success'
+            )
         } else {
-          alert("wrong");
+            Swal.fire({
+                icon: 'error',
+                title: 'sorry...',
+                text: 'your answer is incorrect!',
+              
+              })
         }
       };
 //   console.log(handleClick);

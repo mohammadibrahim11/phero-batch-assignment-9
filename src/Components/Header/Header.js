@@ -4,10 +4,10 @@ import './Header.css'
 
 const Header = () => {
     return (
-        <header className="p-4 dark:bg-gray-800 dark:text-gray-100">
+        <header className="p-4 dark:bg-gray-800 dark:text-gray-100 shadow sticky">
         <div className="container flex justify-between h-16 mx-auto pl-16 pr-16">
             <Link rel="noopener noreferrer" to="/home" aria-label="Back to homepage" className="flex items-center p-2 text-4xl font-bold text-purple-300 ">
-            Quick Quiz
+            Quizzz master
             </Link>
             <ul className="items-stretch hidden space-x-3 md:flex">
                 <li className="flex">

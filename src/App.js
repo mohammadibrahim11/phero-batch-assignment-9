@@ -4,6 +4,7 @@ import Blog from './Components/Blog/Blog';
 import ErrorPage from './Components/ErrorPage/ErrorPage';
 import Home from './Components/Home/Home';
 import Root from './Components/Root/Root';
+import StartPractice from './Components/StartPractice/StartPractice';
 import Statistics from './Components/Statistics/Statistics';
 import Topics from './Components/Topics/Topics';
 import LoadData from './DataLoader/DataLoader';
@@ -35,6 +36,14 @@ function App() {
         {
           path:'/blog',
           element:<Blog></Blog>
+        },
+        {
+          path:'/startquiz/:quizId',
+          loader: async ({params})=>{
+                 console.log(params);
+                 return fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizId}`)
+          },
+          element:<StartPractice></StartPractice>,
         }
       ]
     }

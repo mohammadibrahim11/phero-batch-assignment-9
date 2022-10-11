@@ -6,12 +6,14 @@ import Home from './Components/Home/Home';
 import Root from './Components/Root/Root';
 import Statistics from './Components/Statistics/Statistics';
 import Topics from './Components/Topics/Topics';
+import LoadData from './DataLoader/DataLoader';
 
 function App() {
   const router = createBrowserRouter([
     {
       path:'/',
       element:<Root></Root>,
+      loader:LoadData,
       errorElement:<ErrorPage></ErrorPage>,
       children:[
         {

@@ -16,7 +16,7 @@ const Header = () => {
         >
           Quizzz master
         </Link>
-        <ul  className={` lg:flex md:flex lg:static md:static  absolute duration-200  ease-in  ${open ? 'top-16 left-[290px] right-1 bg-white' : 'top-[-122px] right-1   '}`}>
+        <ul  className={` lg:flex md:flex lg:static md:static  absolute  ease-in  ${open ? 'top-16 left-[290px] right-1 bg-white' : 'top-[-125px] right-1   '}`}>
           <li className="flex">
             <Link 
               rel="noopener noreferrer"

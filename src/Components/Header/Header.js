@@ -6,8 +6,8 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 const Header = () => {
   const [open, setOpen] = useState(false);
   return (
-    <header className="p-4 dark:bg-gray-800 dark:text-gray-100 shadow sticky">
-      <div className="container flex justify-between h-16 mx-auto pl-8 pr-4    sm:justify-between">
+    <header className="p-4 dark:bg-gray-800 dark:text-gray-100 shadow  ">
+      <div className="container flex justify-between h-16 mx-auto pl-8 pr-4  sm:justify-between">
         <Link 
           rel="noopener noreferrer"
           to="/home"

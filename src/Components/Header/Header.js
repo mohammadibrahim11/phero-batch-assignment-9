@@ -6,7 +6,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 const Header = () => {
   const [open, setOpen] = useState(false);
   return (
-    <header className="p-4 dark:bg-gray-800 dark:text-gray-100 shadow  ">
+    <header className="p-4 dark:bg-gray-800 dark:text-gray-100 shadow ">
       <div className="container flex justify-between h-16 mx-auto pl-8 pr-4  sm:justify-between">
         <Link 
           rel="noopener noreferrer"
@@ -16,7 +16,7 @@ const Header = () => {
         >
           Quizzz master
         </Link>
-        <ul  className={` lg:flex md:flex lg:static md:static  absolute duration-500  ease-in  ${open ? 'top-16 absolute left-[390px] bg-white' : 'top-[-122px] left-[390px] right-1'}`}>
+        <ul  className={` lg:flex md:flex lg:static md:static  absolute duration-200  ease-in  ${open ? 'top-16 absolute left-[390px] bg-white' : 'top-[-122px] left-[390px] right-1'}`}>
           <li className="flex">
             <Link 
               rel="noopener noreferrer"

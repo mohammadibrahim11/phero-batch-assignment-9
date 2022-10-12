@@ -1,7 +1,6 @@
 import React from "react";
 import Swal from 'sweetalert2'
 
-
 const Option = ({ option,correctAnswer }) => {
     console.log(correctAnswer);
 
@@ -23,7 +22,6 @@ const Option = ({ option,correctAnswer }) => {
               })
         }
       };
-//   console.log(handleClick);
 
   return (
     <div>

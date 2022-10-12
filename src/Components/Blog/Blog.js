@@ -2,8 +2,12 @@ import React from "react";
 
 const Blog = () => {
   return (
-    <div className="container mx-auto ">
-      <div className="dark:bg-gray-800 dark:text-gray-100 shadow mb-6">
+    <div className="container w-11/12  lg:w-4/5 md:w-3/4 mx-auto mt-6 ">
+          <div>
+            <h3 className="text-6xl text-purple-500 my-6 font-bold "> Q & A </h3>
+          </div>
+
+      <div className="dark:bg-gray-800 dark:text-gray-100 shadow mb-6 text-left border border-purple-300 rounded ">
         <div className="container max-w-4xl px-10 py-6 mx-auto rounded-lg shadow-sm dark:bg-gray-900">
           <div className="flex items-center justify-between">
             <span className="text-sm dark:text-gray-400">october 11, 2022</span>
@@ -28,7 +32,7 @@ const Blog = () => {
           </div>
         </div>
       </div>
-      <div className="dark:bg-gray-800 dark:text-gray-100 shadow mb-6">
+      <div className="dark:bg-gray-800 dark:text-gray-100 shadow mb-6 text-left border border-purple-300 rounded ">
         <div className="container max-w-4xl px-10 py-6 mx-auto rounded-lg shadow-sm dark:bg-gray-900">
           <div className="flex items-center justify-between">
             <span className="text-sm dark:text-gray-400">october 11, 2022</span>
@@ -55,7 +59,7 @@ const Blog = () => {
           </div>
         </div>
       </div>
-      <div className="dark:bg-gray-800 dark:text-gray-100 shadow mb-6">
+      <div className="dark:bg-gray-800 dark:text-gray-100 shadow mb-6 text-left border border-purple-300 rounded ">
         <div className="container max-w-4xl px-10 py-6 mx-auto rounded-lg shadow-sm dark:bg-gray-900">
           <div className="flex items-center justify-between">
             <span className="text-sm dark:text-gray-400">october 11, 2022</span>

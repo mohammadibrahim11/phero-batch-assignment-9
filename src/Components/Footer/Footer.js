@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="dark:bg-gray-800 dark:text-gray-50">
-      <div className=" flex flex-col p-4 mt-5 mx-auto md:p-8 lg:flex-row divide-gray-400 bg-purple-100">
-        <ul className="self-center py-6 space-y-4 text-center sm:flex sm:space-y-0 sm:justify-around sm:space-x-4 lg:flex-1 lg:justify-start pl-16">
+    <footer className="dark:bg-gray-800 dark:text-gray-50 mt-12">
+      <div className=" grid grid-cols-2 content-center lg:grid-cols-2  md:grid-cols-2 sm:grid-cols-1 w-full mx-auto  divide-gray-400 bg-purple-100 py-6 ">
+        <ul className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-3 w-1/2 mx-auto mt-2">
           <Link className="font-bold text-purple-400 " to="/topic">
             Topics
           </Link>
@@ -15,10 +15,9 @@ const Footer = () => {
           <Link className="font-bold text-purple-400" to="/blog">
             Blog
           </Link>
-          {/* <Link>Contact</Link> */}
         </ul>
-        <div className="flex flex-col justify-center pt-6 lg:pt-0">
-          <div className="flex justify-center space-x-4 pr-16">
+        <div className="">
+          <div className="grid grid-cols-3 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-3 w-1/2 mx-auto justify-evenly align-middle ">
             <a
               rel="noopener noreferrer"
               href="https://www.instagram.com/"

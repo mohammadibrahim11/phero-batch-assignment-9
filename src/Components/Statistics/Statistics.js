@@ -17,21 +17,31 @@ const Statistics = () => {
   const { data } = statistics;
 
   return (
-   
-            <div className=" mt-3  mb-32">
-      <BarChart className="w-full mx-auto pt-12" width={750} height={250} data={data}>
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis  dataKey="name" />
-        <YAxis dataKey="total" />
-        <Tooltip />
-        <Legend />
-        <Bar dataKey="total" fill="#8884d8" />
-        <Bar dataKey="" fill="#8884d8" />
-      </BarChart>
+    <div className="chart">
+      <div className="mt-40 container">
+    
+       <BarChart
+          className="container mx-auto"
+          width={730}
+          height={250}
+          data={data}
+        >
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="name" />
+          <YAxis dataKey="total" />
+          <Tooltip />
+          <Legend />
+          <Bar dataKey="total" fill="#8884d8" />
+          <Bar dataKey="" fill="#82ca9d" />
+        </BarChart>
+
+     
+        <h2 className="text-xl font-bold py-5 text-center text-cyan-400 ">
+          {" "}
+          Quizz Statistics
+        </h2>
+      </div>
     </div>
-   
- 
-    //
   );
 };
 

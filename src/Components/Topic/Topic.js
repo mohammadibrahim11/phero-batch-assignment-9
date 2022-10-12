@@ -11,6 +11,9 @@ const Topic = ({ topic }) => {
         <img src={logo} alt="Shoes" className="rounded-xl bg-gray-100" />
       </figure>
       <div className="card-body  items-center text-center">
+        <div className="text-base  text-purple-400 mb-2 text-center">
+          Total quiz : {total}
+        </div>
       
         <div className="card-actions">
          <div className="flex justify-between">

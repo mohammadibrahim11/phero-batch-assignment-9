@@ -7,7 +7,7 @@ const AllTopics = ({ topic }) => {
   const { logo, name,id } = topic;
   return (
     <div>
-      <div className="card  shadow-xl ">
+      <div className="card shadow-xl ">
         <figure className="px-10 pt-10">
           <img src={logo} alt="Shoes" className="rounded-xl bg-gray-100" />
         </figure>

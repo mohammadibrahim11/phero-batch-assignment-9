@@ -18,7 +18,7 @@ const Header = () => {
         </Link>
         <ul  className={` lg:flex md:flex lg:static md:static  absolute duration-500  ease-in  ${open ? 'top-16 absolute left-[390px] bg-white' : 'top-[-122px] left-[390px] right-1'}`}>
           <li className="flex">
-            <Link   activeStyle={{ color: 'red' }}
+            <Link 
               rel="noopener noreferrer"
               to="/home"
               className="flex items-center px-4 mb-1  right-1   font-bold text-purple-300"

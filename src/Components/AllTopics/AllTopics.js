@@ -4,14 +4,21 @@ import { Link } from "react-router-dom";
 
 const AllTopics = ({ topic }) => {
   console.log(topic);
-  const { logo, name,id } = topic;
+  const { logo, name,id,total } = topic;
   return (
     <div>
       <div className="card shadow-xl ">
+        <div>
+          
+        </div>
         <figure className="px-10 pt-10">
           <img src={logo} alt="Shoes" className="rounded-xl bg-gray-100" />
         </figure>
         <div className="card-body  items-center text-center">
+        <div className="text-base  text-purple-400 mb-2 text-center">
+          Total quiz : {total}
+        </div>
+       
           <div className="card-actions">
             <div className="flex justify-between">
               <h2 className="card-title text-base  text-purple-400">{name}</h2>

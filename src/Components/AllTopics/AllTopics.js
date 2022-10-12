@@ -25,7 +25,7 @@ const AllTopics = ({ topic }) => {
 
              <Link to={`/startquiz/${id}`}>
              
-             <button className=" btn text-xs ml-8 ">
+             <button className=" btn text-xs ml-5 ">
                   start practice<ArrowRightIcon className="h-5 w-5 ml-1 text-white" />
                 </button></Link>
               
